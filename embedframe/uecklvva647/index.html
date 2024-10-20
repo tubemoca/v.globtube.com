@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOBTUBE.COM EMBED VIDEO</title>
+
+    <!-- Fluid Player CSS -->
+    <link href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS for Outstream Video -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Outstream video container */
+        .outstream-container {
+            position: relative;
+            width: 100%; /* Full width */
+            max-width: 800px; /* Maximum width for the banner */
+            height: 450px; /* Height of the banner */
+            margin: 20px 0; /* Margin to space it from other content */
+            overflow: hidden; /* Prevent overflow */
+            border: 2px solid #fff; /* Optional border */
+        }
+
+        /* Video styling */
+        #video-id {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video covers the entire area without stretching */
+        }
+
+        /* Advertisement styling */
+        .advertisement {
+            color: #fff; /* Text color */
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+            padding: 10px; /* Padding around text */
+            text-align: center; /* Center the text */
+            font-size: 18px; /* Font size */
+            margin-bottom: 10px; /* Margin below advertisement */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        /* Button styling */
+        .visit-button {
+            padding: 10px 20px;
+            background-color: #ff5722; /* Button color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .visit-button:hover {
+            background-color: #e64a19; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Outstream Video Container -->
+    <div class="outstream-container">
+        <video id="video-id" controls autoplay muted>
+            <source src="https://cdn77-vid-mp4.xvideos-cdn.com/uRRDj7Gfl1bIMP8_2GuVhg==,1729434739/videos/mp4/1/4/4/xvideos.com_144a1a8229d5aca92db3c57a6b0cac84.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+
+    <!-- Fluid Player JS -->
+    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+
+    <script>
+        // Inisialisasi Fluid Player dengan Cast Ad dan VAST ad
+        var player = fluidPlayer('video-id', {
+            layoutControls: {
+                autoplay: true, // Autoplay video
+                mute: true,     // Video dimulai dalam mode mute
+                allowCasting: true, // Enable Cast button for Chromecast
+            },
+            vastOptions: {
+                adList: [{
+                    roll: 'preRoll', // Menunjukkan iklan sebelum video
+                    vastTag: 'https://twinrdsyn.com/preroll.engine?id=e83e9a10-31b5-4c28-a348-82f5e6a28b4e&zid=83795' // VAST tag URL untuk iklan Cast
+                }]
+            }
+        });
+    </script>
+
+</body>
+</html>
