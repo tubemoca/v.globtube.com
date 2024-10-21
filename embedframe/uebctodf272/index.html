@@ -8,16 +8,21 @@
 		html, body {
 			margin: 0;
 			padding: 0;
-			overflow: hidden; /* Mencegah scroll pada halaman */
+			width: 100%;
+			height: 100%;
+			overflow: hidden; /* Mencegah scroll */
 		}
 		iframe {
-			border: none; /* Menghilangkan border iframe */
+			width: 100%;
+			height: 100vh; /* Sesuai tinggi layar browser */
+			border: none;
 		}
 	</style>
 </head>
 <body>	
-<div style='position: relative; padding-bottom: 56.25%; height: 0;'>
-	<iframe src='https://player.viloud.tv/embed/channel/6ccaec207c64d58d99af4f1697d92351/video/f79879f7be710ba2c2efbe21bf12c453?autoplay=1&volume=0&controls=1&title=1&share=0&open_playlist=0&random=0&playlist=0' width='510' height='400' frameborder='0' allow='autoplay' allowfullscreen></iframe>
-</div>
+	<iframe src='https://player.viloud.tv/embed/channel/6ccaec207c64d58d99af4f1697d92351/video/f79879f7be710ba2c2efbe21bf12c453?autoplay=1&volume=0&controls=1&title=0&share=0&open_playlist=0&random=0&playlist=0' 
+		allow='autoplay; fullscreen' 
+		allowfullscreen>
+	</iframe>
 </body>
 </html>
