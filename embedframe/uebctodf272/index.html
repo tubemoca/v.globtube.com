@@ -1,114 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLOBTUBE.COM EMBED VIDEO</title>
- <!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4904325,4,0,0,0,00010000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4904325&101" alt="" border="0"></a></noscript>
-<!-- Histats.com  END  -->
-    <!-- Fluid Player CSS -->
-    <link href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css" rel="stylesheet" type="text/css" />
-    <!-- Custom CSS for Outstream Video -->
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Outstream video container */
-        .outstream-container {
-            position: relative;
-            width: 100%; /* Full width */
-            max-width: 800px; /* Maximum width for the banner */
-            height: 450px; /* Height of the banner */
-            margin: 20px 0; /* Margin to space it from other content */
-            overflow: hidden; /* Prevent overflow */
-            border: 2px solid #fff; /* Optional border */
-        }
-
-        /* Video styling */
-        #video-id {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures the video covers the entire area without stretching */
-        }
-
-        /* Advertisement styling */
-        .advertisement {
-            color: #fff; /* Text color */
-            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
-            padding: 10px; /* Padding around text */
-            text-align: center; /* Center the text */
-            font-size: 18px; /* Font size */
-            margin-bottom: 10px; /* Margin below advertisement */
-            border-radius: 5px; /* Rounded corners */
-        }
-
-        /* Button styling */
-        .visit-button {
-            padding: 10px 20px;
-            background-color: #ff5722; /* Button color */
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .visit-button:hover {
-            background-color: #e64a19; /* Darker shade on hover */
-        }
-    </style>
+	<title>Globtube.com embed video</title>
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden; /* Mencegah scroll pada halaman */
+		}
+		iframe {
+			border: none; /* Menghilangkan border iframe */
+		}
+	</style>
 </head>
-<body>
-
-    <!-- Outstream Video Container -->
-    <div class="outstream-container">
-        <video id="video-id" controls autoplay muted>
-            <source src="https://cdn77-vid-mp4.xvideos-cdn.com/eng9yyG6hQQ8e1WUUVEz9w==,1729434017/videos/mp4/6/5/1/xvideos.com_6513f3190fd84def256555a84782c3c3.mp4" type="video/mp4">
-        </video>
-    </div>
-
-
-
-    <!-- Fluid Player JS -->
-    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
-
-    <script>
-        // Inisialisasi Fluid Player dengan Cast Ad dan VAST ad
-        var player = fluidPlayer('video-id', {
-            layoutControls: {
-                autoplay: true, // Autoplay video
-                mute: true,     // Video dimulai dalam mode mute
-                allowCasting: true, // Enable Cast button for Chromecast
-            },
-            vastOptions: {
-                adList: [{
-                    roll: 'preRoll', // Menunjukkan iklan sebelum video
-                    vastTag: 'https://twinrdsyn.com/preroll.engine?id=e83e9a10-31b5-4c28-a348-82f5e6a28b4e&zid=83795' // VAST tag URL untuk iklan Cast
-                }]
-            }
-        });
-    </script>
-
+<body>	
+<div style='position: relative; padding-bottom: 56.25%; height: 0;'>
+	<iframe src='https://player.viloud.tv/embed/channel/6ccaec207c64d58d99af4f1697d92351/video/f79879f7be710ba2c2efbe21bf12c453?autoplay=1&volume=0&controls=1&title=0&share=0&open_playlist=0&random=0&playlist=0' 
+	style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' 
+	frameborder='0' allow='autoplay' allowfullscreen></iframe>
+</div>
 </body>
 </html>
